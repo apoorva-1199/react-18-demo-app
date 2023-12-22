@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <div>
-        <h2>Welcome to React Router Tutorial</h2>
+        <h2>React 18 Demo App</h2>
         <nav>
           <ul>
             <li><Link to={'/'} className="App-link">Gradebook Dashboard</Link></li>

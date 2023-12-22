@@ -2,12 +2,23 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import MyProgress from './components/MyProgress';
 import GradebookDashboard from "./components/GradebookDashboard";
 import './App.css';
+import styled from 'styled-components';
+
+
+
+const StyledHeading = styled.h2`        
+background: ${props => props.theme.palette.primary.dark};
+color: ${props => props.theme.palette.secondary.light};
+font-size: ${props => props.theme.typography.h2.fontSize};
+padding: 10px 20px;
+`;
+
 
 function App() {
   return (
     <Router>
       <div>
-        <h2>React 18 Demo App</h2>
+        <StyledHeading>React 18 Demo App</StyledHeading>
         <nav>
           <ul>
             <li><Link to={'/'} className="App-link">Gradebook Dashboard</Link></li>

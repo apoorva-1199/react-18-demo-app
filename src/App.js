@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import MyProgress from './components/MyProgress';
-import GradebookDashboard from "./components/GradebookDashboard";
+import MyProgressComponent from './components/MyProgress';
+import GradebookDashboardComponent from "./components/GradebookDashboard";
 import './App.css';
 import styled from 'styled-components';
 
@@ -27,8 +27,8 @@ function App() {
         </nav>
         <hr />
         <Routes>
-          <Route exact path='/' component={GradebookDashboard} />
-          <Route path='/my-progress' component={MyProgress} />
+          <Route exact path='/' element={<GradebookDashboardComponent />} />
+          <Route path='/my-progress' element={<MyProgressComponent />} />
         </Routes>
       </div>
     </Router>
